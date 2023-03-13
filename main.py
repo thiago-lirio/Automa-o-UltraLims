@@ -10,8 +10,8 @@ navegador = webdriver.Chrome(service=servico)
 
 navegador.get("https://scitec.ultralims.com.br/public/index.php")
 
-navegador.find_element('xpath', '//*[@id="login"]').send_keys('thiago.lirio')
-navegador.find_element('xpath', '//*[@id="password"]').send_keys('thiago150899')
+navegador.find_element('xpath', '//*[@id="login"]').send_keys('#####')
+navegador.find_element('xpath', '//*[@id="password"]').send_keys('####')
 navegador.find_element('xpath', '//*[@id="password"]').get_attribute('value')
 print(navegador.find_element('xpath', '//*[@id="password"]').get_attribute('value'))
 time.sleep(1)
